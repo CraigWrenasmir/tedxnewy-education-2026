@@ -70,16 +70,17 @@
     letter-spacing: 1px;
   }
 
-  .ascii-banner {
-    color: var(--red);
+  .brand-label {
     font-family: 'VT323', monospace;
-    font-size: 22px;
-    line-height: 1.2;
-    margin-bottom: 16px;
-    text-shadow: 0 0 8px var(--red-glow);
-    white-space: pre;
-    overflow-x: auto;
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+    line-height: 1;
   }
+
+  .brand-label .ted { color: var(--red); text-shadow: 0 0 10px var(--red-glow); }
+  .brand-label .x   { color: var(--grey); }
+  .brand-label .org { color: #555; font-size: 22px; letter-spacing: 2px; }
 
   .main-title {
     font-family: 'VT323', monospace;
@@ -480,8 +481,7 @@
     .timetable-grid { grid-template-columns: 1fr; }
     .stats-row { grid-template-columns: repeat(2, 1fr); }
     .output-section .os-body { grid-template-columns: 1fr; }
-    .ascii-banner { font-size: 14px; }
-    .main-title { font-size: 36px; }
+.main-title { font-size: 36px; }
   }
 </style>
 </head>
@@ -504,12 +504,7 @@
 
 <!-- ===== HEADER ===== -->
 <div class="header-block">
-  <div class="ascii-banner">
- _____ ___ ___       _  _
-|_   _| __|   \ __ _| \| |_____ __ ___  _
-  | | | _|| |) \ \ / | .` / -_) V  V / | |
-  |_| |___|___//_\_\_|_|\_\___|\_/\_/  |_|
-  </div>
+  <div class="brand-label"><span class="ted">TED</span><span class="x">x</span>Newy <span class="org">// YOUTH</span></div>
   <div class="main-title">Youth<span>Futures</span>Lab</div>
   <div class="subtitle">A one-day civic imagination lab &mdash; University of Newcastle</div>
   <div class="meta-line">
